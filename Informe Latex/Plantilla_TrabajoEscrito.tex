@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Plantilla: para la realizaci�n de informes.
+%Curso:     Simulaci�n estad�stica.
+%Profesor:  Johann A. Ospina.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Establece el tipo de documento (art�culo), tama�o de letra (10pt) a una columna.
+\documentclass[letterpaper,12pt,onecolumn,titlepage]{article} 
+ 
+ 
+% Cargar paquetes
+\usepackage{verbatim}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfigure}
+\usepackage{ucs}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{fontenc}
+\usepackage{graphicx}
+\usepackage{anysize}
+\usepackage{fancyhdr}
+\usepackage[comma,authoryear]{natbib}
+\usepackage{url} %paquete para definir url
+\usepackage{hyperref}  %hipervinculos
+
+%Estilo de la p�gina
+\pagestyle{fancy}
+
+%Establecer el margen
+\marginsize{2cm}{2cm}{1cm}{1cm}
+\setlength{\headheight}{13.1pt}
+
+
+% Portada
+\title{
+    \textbf{Laboratorio N.4}\
+    ~\\{Introduccion a Los Metodos Estadisticos}   
+    ~\\{Prueba de Hipotesis y Regresion}}
+\author{
+    {Diana Carolina Arias Sinisterra Cod. 1528008}
+ ~\\{Kevin Steven Garcia Chica Cod. 1533173}
+ ~\\{Cesar Andres Saavedra Vanegas Cod. 1628466}}
+
+\date{
+     \textbf{Universidad Del Valle}\   
+    ~\\{Facultad De Ingenieria}
+    ~\\{Estadistica}
+    ~\\{Diciembre}
+    ~\\{2017}}
+ 
+ 
+ 
+\decimalpoint %Poner punto decimal
+ 
+\begin{document}
+ 
+% Se aplica el formato a las p�ginas. Se despliegan: portada e �ndices de materias, figuras y tablas
+\renewcommand{\listtablename}{}
+\renewcommand{\tablename}{Tabla}
+\maketitle
+\setcounter{page}{2}
+\tableofcontents{}
+%\thispagestyle{empty}
+%\newpage
+\listoffigures{}
+\listoftables{}
+
+\thispagestyle{empty}
+
+\newpage
+\fancyhead{}
+\fancyfoot{}
+ 
+% Encabezado y pie de pagina
+\lhead{Introduccion a los Metodos Estadisticos}
+\lfoot{Universidad Del Valle}
+\rfoot{\thepage}
+
+% Estilo de la bibliograf�a
+\bibliographystyle{apalike}
+ 
+% Desarrollo de los contenidos del documento
+\section{Prueba De Hipotesis}
+\subsection{Situaci\'{o}n 1}
+
+\pagebreak \subsection{Situaci\'{o}n 2}
+\subsection{Punto A.}
+\subsection{Punto B.} 
+
+\pagebreak\subsection{Situaci\'{o}n 3}
+\subsection{Punto A.}
+\subsection{Punto B.} 
+
+\pagebreak\subsection{Situaci\'{o}n 4}
+
+\pagebreak\subsection{Situaci\'{o}n 5}
+\subsection{Punto A.}
+\subsection{Punto B.} 
+\subsection{Punto C.}
+
+\pagebreak\subsection{Situaci\'{o}n 6}
+\subsection{Punto C.}
+\subsection{Punto D.} 
+
+\pagebreak\subsection{Situaci\'{o}n 7}
+\subsection{Punto A.}
+\subsection{Punto B.}
+
+\pagebreak\section{Regresion}
+\subsection{Situaci\'{o}n 1}
+\subsection{Punto A.}
+\subsection{Punto B.}
+\subsection{Punto C.}
+\subsection{Punto D.}
+\subsection{Punto E.}
+\subsection{Punto F.}
+\subsection{Punto G.}
+
+\pagebreak\subsection{Situaci\'{o}n 2}
+\subsection{Punto A.}
+\subsection{Punto B.}
+\subsection{Punto C.}
+
+\bibliography{Bibliografia}
+\end{document}
+
+
+
+
+
+
+
+
