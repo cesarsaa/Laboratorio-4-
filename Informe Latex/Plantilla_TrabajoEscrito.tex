@@ -201,8 +201,30 @@ Entonces, seg\'{u}n lo anterior, concluimos que estas dos variables tienen una r
 
 
 ~\\ \textbf{ESTIMACI\'{O}N POR INTERVALOS:}
-~\\ $\langle E[Y|X=30] \rangle_{0.95\%}=\langle \hat{E[Y|X=30]} \pm t_{(\frac{\alpha}{2};n-2)} $
+~\\ No tenemos formula para la estimaci\'{o}n or intervalos de la esperanza de Y dado un valor $X=x_{0}$, esto es $E[Y|X=x_{0}]$ por lo cual, trataremos de construirlo, como un intervalo para la media, esto seria:
+~\\ $\langle E[Y|X=x_{0}] \rangle_{1-\alpha\%}=\langle \hat{E[Y|X=x_{0}]} \pm t_{(\frac{\alpha}{2};n-2)}\cdot \sqrt{V(\hat{E[Y|X=x_{0}]})}\rangle $
 
+~\\ Debemos hallar $V(\hat{E[Y|X=x_{0}]})$, ya que no la conocemos.
+
+~\\ Sabemos que: $\hat{E[Y|X=x_{0}]}=\hat{\beta_{0}}+\hat{\beta_{1}}x_{0}$  , como $\hat{\beta_{0}}=\bar{Y}-\hat{\beta_{1}}\bar{X}$ 
+~\\ $$\hat{E[Y|X=x_{0}]}=\bar{Y}-\beta_{1}\bar{X}+\hat{\beta_{1}}x_{0}$$
+~\\ $$\hat{E[Y|X=x_{0}]}=\bar{Y}+\hat{\beta_{1}}(x_{0}-\bar{X})$$
+
+~\\ Ahora, procedemos a calcular lo que nos interesa:
+~\\ $$Var(\hat{E[Y|X=x_{0}]})=Var(\bar{Y})+Var[\hat{\beta_{1}}(x_{0}-\bar{X})]$$
+~\\ $$=Var(\bar{Y})+(x_{0}-\bar{X})^2 Var(\hat{\beta_{1}})$$ 
+~\\ como $V(\hat{\beta_{1}})=\frac{\hat{\sigma}^2}{S_{xx}}$ y $V(\bar{Y})=\frac{1}{n}\hat{\sigma}^2$, reemplazando nos queda:
+~\\ $$Var(\hat{E[Y|X=x_{0}]})=\frac{1}{n}\hat{\sigma}^2 + (x_{0}-\bar{X})^2 \cdot \frac{\hat{\sigma}^2}{S_{xx}}$$
+~\\ $$=\hat{\sigma}^2 \left( \frac{1}{n}+\frac{(x_{0}-\bar{X})^2}{S_{xx}}\right)$$
+
+~\\ Entonces, nuestro intervalo de confianza construido para el valor esperado de Y dado un valor $X=x_{0}$ quedara:
+~\\ $\langle E[Y|X=x_{0}] \rangle _{(1-\alpha)\%}=\langle \hat{E[Y|X=x_{0}]}\pm t_{(\frac{\alpha}{2};n-2)}\sqrt{(\frac{1}{n}+\frac{(x_{0}-\bar{X})^2}{S_{xx}})\cdot \hat{\sigma^2}} \rangle$
+
+~\\ Ahora, volviendo a nuestro problema, tenemos los siguientes datos: $\hat{E[Y|X=30]}=30.962752$, $\hat{\sigma^2}=10.1906515$, $t_{(\frac{\alpha}{2},19)}=2.093$, $\bar{X}=31.095238$ y $S_{xx}=3543.809524$
+~\\ Reemplazando en nuestro intervalo, nos queda: 
+~\\ $\langle E[Y|X=30] \rangle _{95\%}=\langle 30.962752 \pm 2.093\sqrt{(\frac{1}{21}+\frac{(30-31.095238)^2}{3543.809524})\cdot 10.1906515} \rangle$
+~\\ $$=\langle 30.962752 \pm 2.093(0.694132321)\rangle$$
+~\\ $$=(29.5099 ; 32.4155)$$
 \pagebreak\subsection{Situaci\'{o}n 2}
 \subsection{Punto A.}
 \subsection{Punto B.}
