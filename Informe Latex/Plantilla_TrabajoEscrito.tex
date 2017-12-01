@@ -112,12 +112,96 @@
 \pagebreak\section{Regresion}
 \subsection{Situaci\'{o}n 1}
 \subsection{Punto A.}
-\subsection{Punto B.}
+\begin{itemize}
+\item Reduccion porcentual del total de solidos: El total de s\'{o}lidos disueltos (a menudo abreviado como TDS, del ingl\'{e}s: Total Dissolved Solids) es una medida del contenido combinado de todas las sustancias inorg\'{a}nicas y org\'{a}nicas contenidas en un l\'{i}quido en forma molecular, ionizada o en forma de suspensi\'{o}n micro-granular (sol coloide). 
+Los TDS (Total dissolved solids) son la suma de los minerales, sales, metales, cati\'{o}nes o aniones disueltos en el agua. Esto incluye cualquier elemento presente en el agua que no sea (H20) mol\'{e}cula de agua pura y s\'{o}lidos en suspensi\'{o}n. (S\'{o}lidos en suspensi\'{o}n son part\'{i}culas \'{o} sustancias que ni se disuelven ni se asientan en el agua, tales como pulpa de madera.)
+En general, la concentraci\'{o}n de s\'{o}lidos disueltos totales es la suma de los cati\'{o}nes (carga positiva) y aniones (cargado negativamente) iones en el agua.
+\item Reduccion porcentual de demanda bioquimica de oxigeno: La demanda bioqu\'{i}mica de ox\'{i}geno (DBO) es un par\'{a}metro que mide la cantidad de diox\'{i}geno consumido al degradar la materia org\'{a}nica de una muestra l\'{i}quida.
+\end{itemize} 
+\pagebreak\subsection{Punto B.}
+~\\ \begin{figure}[!h]
+    \begin{center}
+        \includegraphics[width=10cm]{Figuras/punto1b.png}
+        \caption{Gr\'{a}fica de dispersi\'{o}n con recta de ajuste entre las variables X y Y}
+        \label{fig:Densidad}
+    \end{center}
+\end{figure}
+~\\ En esta imagen podemos ver que hay una correlaci\'{o}n positiva bastante fuerte, por lo que esperamos que el coeficiente de correlaci\'{o}n sea cercano a 1. Tambi\'{e}n podemos ver que las distancias de los datos o los puntos a la recta de ajuste son considerablemente peque\~{n}as, por lo cu\'{a}l creemos que el $R^2$ es tambi\'{e}n cercano a 1, dici\'{e}ndonos esto, que el modelo ajustado representara en un alto porcentaje la variaci\'{o}n total de Y.
+~\\ Procedemos a calcular los dos valores mencionados:
+\begin{itemize}
+\item Coeficiente de correlaci\'{o}n: $\hat{\rho}=r=\frac{\sum\limits_{i=1}^{n}(x_{i}-\bar{x})(y_{i}-\bar{y})}{\sqrt{\sum\limits_{i=1}^{n}(x_{i}-\bar{x})^2}\cdot\sqrt{\sum\limits_{i=1}^{n}(y_{i}-\bar{y})^2}}$
+~\\ $\bar{x}=31.095238$ y $\bar{y}=31.9523809$, entonces:
+~\\ $$\hat{\rho}=r=\frac{3202.095238}{\sqrt{3543.809524\cdot\sqrt{3086.952381}}}=\frac{3202.095238}{3307.502267}=0.9681$$
+\item Coeficiente de determinaci\'{o}n $R^2$: $R^2=r^2=0.9372$
+~\\ Tal y como esperabamos, el coeficiente de correlaci\'{o}n lineal, nos arrojo un resultado de 0.9681 que es bastante alto. Este resultado nos dice que a medida que X aumenta, Y tambien aumenta en una proporci\'{o}n aproximada de 0.9681. Con respecto al $R^2$, tambi\'{e}n nos arroj\'{o} un valor que esperabamos (0.9372) que es bastante alto; este valor nos dice que el $93.72\%$ de la variabilidad total de la variable Y, es explicada por la variable X.
+Entonces, seg\'{u}n lo anterior, concluimos que estas dos variables tienen una relaci\'{o}n positiva demasiado fuerte, es decir, cuando aumenta X, Y tambien aumentara, y por el $R^2$ concluimos que X es una buena variable explicativa para Y.
+\end{itemize} 
 \subsection{Punto C.}
+~\\ Para evaluar la asociacion lineal entre las variables X y Y, tendremos que plantear las hipotesis sobre $\rho$ de la siguiente manera:
+
+~\\ $H_{0}$: $\rho=0$ (No hay correlacion lineal)
+~\\ $H_{1}$: $\rho\neq 0$ (Hay correlacion lineal)
+
+~\\ $T_{\rho}=\frac{r-\rho}{\sqrt{\frac{1-r^2}{n-2}}}$
+~\\ Reemplazando los valores, teniendo en cuenta que por el punto anterior $r=0.9681$, tenemos:
+~\\ $T_{\rho}=\frac{0.9681}{\sqrt{\frac{1-(0.9681)^2}{21-2}}}=16.84139$
+
+~\\ Tomando $\alpha=0.05$, $T_{(0.975;19)}=2.093$
+~\\ Como $T_{\rho}=16.84139>2.093$, rechazamos $H_{0}$ y concluimos que con una confianza del $95\%$, si existe correlacion lineal entre las dos variables.  
 \subsection{Punto D.}
-\subsection{Punto E.}
+~\\ El modelo ajustado es de la forma: $Y_{i}=\beta_{0}+\beta_{1}X_{i}+e_{i}$
+~\\ $$\hat{\beta_{1}}=\frac{\sum\limits_{i=1}^{n}x_{i}y_{i}-n\bar{x}\bar{y}}{\sum\limits_{i=1}^{n}{x_{i}}^2 - n\bar{x}^2}=\frac{24067-21(31.095238)(31.9523809)}{23849-21(31.095238)^2}=\frac{3202.095336}{3543.809648}=0.903574$$
+
+~\\ $$\hat{\beta_{0}}=\bar{y}-\hat{\beta_{1}}\bar{x}=31.9523809-(0.903574\cdot 31.095238)=3.855532$$
+
+~\\ El modelo ajustado queda: $Y_{i}=3.855532+0.903574 X_{i}+ e_{i}$
+
+~\\ \textbf{INTERPRETACI\'{O}N:}
+~\\ $\hat{\beta_{0}}=3.855532$ : Sin tener en cuenta la variabilidad de la reducci\'{o}n porcentual del total de s\'{o}lidos, se espera una reducci\'{o}n porcentual de demanda bioqu\'{i}mica de oxigeno de 3.855532.
+
+~\\ $\hat{\beta_{1}}=0.903574$ : Por cada unidad adicional de la reducci\'{o}n porcentual del total de s\'{o}lidos, se espera que la reducci\'{o}n porcentual de demanda bioqu\'{i}mica de oxigeno aumente en promedio en 0.903574 unidades.
+
+\pagebreak\subsection{Punto E.}
+~\\ Los indicadores utilizados para evaluar la bondad de ajuste de un modelo son el $\rho$ y el $R^2$, como ya los obtuvimos en el punto b, vamos a interpretarlos.
+
+~\\ $\rho=0.9681$: Este valor nos indica que existe una correlaci\'{o}n positiva bastante fuerte (casi perfecta), es decir, cuando x aumenta, y aumenta casi en la misma proporci\'{o}n. Cuando tenemos una correlaci\'{o}n tan alta entre las dos variables, podemos estar seguros de que el modelo ajustado ser\'{a} un buen modelo ($R^2$ tendiendo a 1) para explicar Y en t\'{e}rminos de X.
+
+~\\ $R^2=0.9372$: Este valor nos dice que el $93.72\%$ de la variabilidad total de variable Y(reducci\'{o}n porcentual de demanda bioqu\'{i}mica de oxigeno) es exlicada por la variable X(reducci\'{o}n porcentual del total de s\'{o}lidos). Lo que en el fondo nos dice que el modelo es bastante bueno, ya que las distancias de los datos o los puntos a la recta de regresi\'{o}n ajustada, son muy peque\~{n}as.
+
 \subsection{Punto F.}
+~\\ \textbf{Para $\beta_{0}$:} $\langle \beta_{0} \rangle_{(1-\alpha)\%}=\langle \hat{\beta_{0}}\pm t_{(\frac{\alpha}{2},n-2)}\sqrt{V(\hat{\beta_{0}})} \rangle$
+
+~\\ $V(\hat{\beta_{0}})=\frac{\hat{\sigma^2} \sum\limits_{i=1}^{n}{x_{i}}^2}{n S_{xx}}$
+
+~\\ $\hat{\sigma^2}=\frac{1}{n-2}[S_{yy}-\hat{\beta_{1}}S_{xy}]=\frac{1}{21-2}[3086.952381-(0.903574\cdot 3202.095238)]=\frac{1}{19}(193.6223784)=10.1906515$
+
+~\\ Entonces, reemplazando: $V(\hat{\beta_{0}})=\frac{10.196515\cdot 23849}{21\cdot 3543.809524}=3.265746$
+
+~\\ Ahora, con $\alpha=0.05$:
+~\\ $$\langle \beta_{0} \rangle_{0.95\%}=\langle 3.855532 \pm 2.093\cdot \sqrt{3.265746} \rangle$$
+~\\ $$(0.073193 ; 7.6378708) $$
+
+~\\ \textbf{Para $\beta_{1}$:} $\langle \beta_{1} \rangle_{(1-\alpha)\%}=\langle \hat{\beta_{1}}\pm t_{(\frac{\alpha}{2},n-2)}\sqrt{V(\hat{\beta_{0}})} \rangle$
+
+~\\ $V(\hat{\beta_{1}})=\frac{\hat{\sigma^2}}{S_{xx}}$
+~\\ Ya sabemos que $\hat{\sigma^2}=10.1906515$
+
+~\\ Entonces: $V(\hat{\beta_{1}})=\frac{10.1906515}{3543.809524}=0.00287562$
+
+~\\ Ahora, con $\alpha=0.05$:
+~\\ $$\langle \beta_{1} \rangle_{0.95\%}=\langle 0.903574 \pm 2.093\cdot \sqrt{0.00287562} \rangle$$
+~\\ $$(0.791337 ; 1.0158107) $$
 \subsection{Punto G.}
+~\\ \textbf{ESTIMACI\'{O}N PUNTUAL:}
+~\\ $E[Y|X]=E[\beta_{0}+\beta_{1}x1+e]=E[\beta_{0}]+E[\beta_{1}x_{1}]+E[e]$, sabemos que $E[e]=0$, por los supuestos del modelo lineal.
+~\\ Entonces: $\hat{E[Y|X]}=\hat{\beta_{0}}+\hat{\beta_{1}}x_{1}$
+~\\ Por consiguiente: $E[Y|X=30]=\hat{\beta_{0}}+\hat{\beta_{1}}\cdot 30=3.855532+0.903574(30)=30.962752$
+
+~\\ El valor esperado de la reducci\'{o}n de la demanda bioqu\'{i}mica de oxigeno cuando se reduce a $30\%$ el porcentaje total de s\'{o}lidos es de $30.962752\%$.
+
+
+~\\ \textbf{ESTIMACI\'{O}N POR INTERVALOS:}
+~\\ $\langle E[Y|X=30] \rangle_{0.95\%}=\langle \hat{E[Y|X=30]} \pm t_{(\frac{\alpha}{2};n-2)} $
 
 \pagebreak\subsection{Situaci\'{o}n 2}
 \subsection{Punto A.}
