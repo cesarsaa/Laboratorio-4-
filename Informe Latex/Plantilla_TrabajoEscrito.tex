@@ -84,22 +84,68 @@
  
 % Desarrollo de los contenidos del documento
 \section{Prueba De Hipotesis}
-\subsection{Situaci\'{o}n 1}
+\subsection{Situaci\'{o}n 2}
+~\\ Dado que los salarios se encuentran distribuidos normalmente con media ${\mu}$ y varianza ${\sigma^2}$ $Salarios ~ N(\mu = 13.200, \sigma^2 = 1742400)$ Por lo cual se esta acusando a una compania de pagar por debajo del est\'{a}ndar nacional. 
+~\\ Para contrastar esta situaci\'{o}n se ha tomado una muestra   de 40 trabajadores sobre los cuales se observa un pagro promedio de $\$12000/hora.$ 
 
-\pagebreak \subsection{Situaci\'{o}n 2}
-\subsection{Punto A.}
-\subsection{Punto B.} 
+~\\ ¿Es suficiente esta evidencia para acusar a la empresa?
 
-\pagebreak\subsection{Situaci\'{o}n 3}
-\subsection{Punto A.}
-\subsection{Punto B.} 
+~\\ Teniendo en cuenta que los salarios se encuentran distribuidos normal 
+~\\  $\left. Salarios \right \} \to N(\mu = 13.200, \sigma^2 = 1742400)$
+
+~\\Procedemos a plantear la hipotesis 
+~\\$H_{o} : \mu = 13.200$
+~\\$H_{1} : \mu < 13.200$
+
+~\\ Donde se tienen los siguientes datos con un nivel de significancia del 0.05:
+~\\ $n=40$
+~\\ $\bar x = 12.000 $
+~\\ $Sx = 1320 $
+~\\ $Z_{\alpha} = Z_{0.05} = -1.64$
+
+~\\ Estadistico de Prueba $ Z_{p} = \frac{\bar x - \mu}{\sigma^2/\sqrt{n}}$
+
+~\\ $ Z_{p} = \frac{12000 - 13200}{1320/\sqrt{40}} $
+~\\ $ Z_{p} = -5.7495$
+
+~\\  $\left. Z_{p} < Z_{\alpha} \right \} \to  -5.7495 < -1.64$
+
+~\\ \textbf{Conclusion:}
+~\\ Por lo cual, con una significancia del $5\%$ se rechaza $H_{o}$ y se acepta por lo tanto la hipotesis $H_{1}$ lo que implica suficiente evidencia para acusar a la empresa de realizar pagos inferiores a $\$13.200$. 
 
 \pagebreak\subsection{Situaci\'{o}n 4}
 
-\pagebreak\subsection{Situaci\'{o}n 5}
-\subsection{Punto A.}
-\subsection{Punto B.} 
-\subsection{Punto C.}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\rule[-1ex]{0pt}{2.5ex}  Comuna & n & N. Asistentes\\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex}  A & 60 & 8 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex}  B & 50 & 9 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+~\\Acorde a los resultados obtenidos por la seccretaria de educacion y consignados en la tabla, se procede a plantear la hipotesis con la cual se pueda decidir si es acertado ubicar la escuela en la comuna A. 
+
+~\\Procedemos a plantear la hipotesis 
+~\\$H_{o} : P_{1} - P_{2} = 0$
+~\\$H_{1} :  P_{1} - P_{2} < 0$
+
+~\\La hipotesis nos lleva a tener que evaluar una diferencia de proporciones, con un coeficiente de significancia de 0.05 y para los cuales se tienen los siguientes datos.
+~\\  $P_{A} = 8/50 = 0.16$
+~\\  $P_{B} = 9/50 = 0.18$
+~\\ $n_{1} = 50$
+~\\ $n_{2} = 60$
+~\\ $Z_{\alpha} = Z_{0.05} = -1.64$
+
+~\\ Estadistico de Prueba $Z_{p} = \frac{(P_{A} - P_{B}) - d }{\sqrt{(P_{A}(1-P_{A})/n1) + (P_{B}(1-P_{B})/n2)}}$
+
+~\\$Z_{p} = \frac{(0.16 - 0.18) - 0 }{\sqrt{(0.16(1-0.16)/50) + (0.18(1-0.18)/60)}}$
+~\\$Z_{p} = 0.1444$
+
+~\\  $\left. Z_{p} < Z_{\alpha} \right \} \to  0.1444 > -1.64$
 
 \pagebreak\subsection{Situaci\'{o}n 6}
 \subsection{Punto C.}
