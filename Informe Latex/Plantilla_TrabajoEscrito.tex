@@ -145,7 +145,7 @@
 ~\\$Z_{p} = \frac{(0.16 - 0.18) - 0 }{\sqrt{(0.16(1-0.16)/50) + (0.18(1-0.18)/60)}}$
 ~\\$Z_{p} = 0.1444$
 
-~\\  $\left. Z_{p} < Z_{\alpha} \right \} \to  0.1444 > 1.645$
+~\\  $\left \{ Z_{p} < Z_{\alpha} \right \} \to  0.1444 > 1.645$
 
 ~\\ \textbf{Conclusion:}
 ~\\ Con base en los resultados obtenidos en los cuales nuestro valor $Z_{p} = 0.1444$ se encuentra en la region de aceptacion, pese a ser un margen de aceptacion bastante bajo es adecuada la decision de la secretaria de eduacion de ubicar la escuela en la comuna A, es decir aceptamos la hipotesis nula y por lo tanto con una significancia de $5\%$ podemos afirmar que pese a que la diferencia de proporciones de la poblacion es pequeña podemos aceptar la construccion del centro educativo. 
@@ -154,19 +154,31 @@
 \subsection{Punto C.}
 ~\\ De acuerdo con la informacion proporcionada procedemos a realizar el planteamiento de la hipotesis, hipotesis con la cual podremos decidir si el peso medio de los niños es inferior a los 3.0KG. 
 
-~\\ Antes de plantear la hipotesis es necesario realizaar un cambio de unidades, puesto que la informacion de la muestra se encuenta en libras y los analisis respectivos que se requieren se van a llevar a cabo en KG. Para lo cual se realiza una regla de tres para encontrar las equivalencias.
+~\\ Antes de plantear la hipotesis es necesario realizar un cambio de unidades, puesto que la informacion de la muestra se encuenta en libras y los analisis respectivos que se requieren se van a llevar a cabo en KG. Para lo cual se realiza una regla de tres para encontrar las equivalencias.
 
 ~\\Procedemos a plantear la hipotesis 
 ~\\$H_{o} : \mu = 6$
 ~\\$H_{1} : \mu < 6$
  
 \subsection{Punto D.} 
+~\\ De los datos dados en la tabla, tenemos que el percentil 35 es 5.0 libras, esto nos dice que el $35\%$ de los niños tienen un peso menor o igual a 5.0 libras. Por tanto, de la tabla tenemos que el porcentaje de niños de la muestra, que presentan bajo peso al nacer es del $35\%$ esto es, $\hat{p}=0.35$.
+~\\ Planteando las hip\'{o}tesis tenemos:
+~\\ $H_{0}$: $p=0.05$
+~\\ $H_{1}$: $p>0.05$
 
+tenemos que n=50, por tanto, podr\'{i}amos considerar la muestra como una muestra grande y por ello, podemos aplicar la prueba con la aproximaci\'{o}n a la normal:
+
+~\\ $Z=\frac{\hat{P}-P_{0}}{\sqrt{\frac{P_{0}(1-P_{0})}{n}}}=\frac{0.35-0.05}{\sqrt{\frac{0.05(0.95)}{50}}}=9.7333$
+
+~\\ La regi\'{o}n de rechazo asignando una confianza del $95\%$ sera: $Rc=\left\lbrace Z|Z>1.645 \right\rbrace$
+
+~\\ \textbf{Conclusi\'{o}n:}
+~\\ Como Z=9.7333 es mucho mayor que 1.645, rechazamos $H_{0}$ y concluimos que con una confianza del $95\%$, el verdadero porcentaje de niños que presentan bajo peso al nacer en esa comunidad es mayor que $5\%$.
 \pagebreak\subsection{Situaci\'{o}n 7}
 \subsection{Punto A.}
 \subsection{Punto B.}
 
-\pagebreak\section{Regresion}
+\pagebreak\section{Regresi\'{o}n}
 \subsection{Situaci\'{o}n 1}
 \subsection{Punto A.}
 \begin{itemize}
