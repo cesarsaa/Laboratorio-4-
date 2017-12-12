@@ -64,6 +64,12 @@ plotn <- function(x,main="Histograma de frecuencias y distribuci??n normal",
 }
 plotn(x, main="Histograma de Frecuencias para la diferencia y Curva de normalidad")
 
+plot(density(Diferencia), main='Densidad para la Diferencia', col="blue", xlab="X", ylab="Densidad")
+
+#Funcion qqnorm
+qqnorm(x)
+qqline(x)
+
 #Regresion
 #1 
 x<-c(3,7,11,15,18,27,29,30,31,32,33,36,37,38,39,40,42,43,45,47,50)
