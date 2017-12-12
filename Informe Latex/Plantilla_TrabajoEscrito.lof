@@ -1,5 +1,10 @@
 \select@language {spanish}
-\contentsline {figure}{\numberline {1}{\ignorespaces Histograma de Frecuencias para la Diferencia y curva de Normalidad}}{8}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Curva de normalidad para la Densidad}}{9}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Gr\'{a}fica de dispersi\'{o}n con recta de ajuste entre las variables X y Y}}{11}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Gr\'{a}fica de dispersi\'{o}n con recta de ajuste entre las variables X(desempleo) y Y(Tasa de homicidios)}}{16}{figure.4}
+\contentsline {figure}{\numberline {1}{\ignorespaces Regi\'on de rechazo para $H_{o} : \mu = 13.200$ y $H_{1} : \mu < 13.200$}}{4}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Regi\'on de rechazo para $H_{o} : P_{A} = P_{1} - P_{2} = 0$ y $H_{1} : P_{1} - P_{2} > 0$}}{5}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Regi\'on de rechazo para $H_{o} : \mu = 6$ y $H_{1} : \mu < 6$}}{7}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Regi\'on de rechazo para $H_{o} : p=0.05$ y $H_{1} : p>0.05$}}{8}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Regi\'on de rechazo para $H_{o} : mu_{D} = 0.02$ y $H_{1} : \mu _{D} > 0.02$}}{10}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Histograma de Frecuencias para la Diferencia y curva de Normalidad}}{11}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Curva de normalidad para la Densidad}}{12}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Gr\'{a}fica de dispersi\'{o}n con recta de ajuste entre las variables X y Y}}{14}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Gr\'{a}fica de dispersi\'{o}n con recta de ajuste entre las variables X(desempleo) y Y(Tasa de homicidios)}}{19}{figure.9}
